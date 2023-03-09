@@ -20,7 +20,7 @@ const Navbar = () => {
   //  const ref = useRef()
 
   return (
-    <div className=" flex flex-col md:flex-row md:justify-start justify-center items-center py-2 shadow-md ">
+    <div className=" flex flex-col md:flex-row md:justify-start justify-center items-center py-2 shadow-lg">
       <div className="logo mx-5 py-2">
         <Link href={"/"}><Image width={200} height={40} src="/logo.png" /></Link>
       </div>
@@ -28,12 +28,13 @@ const Navbar = () => {
         <ul className='flex items-center space-x-7 md:text-md ml-8'>
           <Link href={"/"}><li className="hover:-translate-y-1 hover:underline underline-offset-4 cursor-pointer hover:text-slate-900 text-slate-600 ">Home</li></Link>
           <Link href={"/"}><li className="hover:-translate-y-1 hover:underline underline-offset-4 cursor-pointer hover:text-slate-900 text-slate-600 ">About</li></Link>
-          <Link href={"/"}><li className="hover:-translate-y-1 hover:underline underline-offset-4 cursor-pointer hover:text-slate-900 text-slate-600 ">Contact</li></Link>
+          <Link href={"/contact"}><li className="hover:-translate-y-1 hover:underline underline-offset-4 cursor-pointer hover:text-slate-900 text-slate-600 ">Contact</li></Link>
           <Link href={"/tshirts"}><li className="hover:-translate-y-1 hover:underline underline-offset-4 cursor-pointer hover:text-slate-900 text-slate-600 ">Shopping</li></Link>
         </ul>
       </div>
       <div className="cart absolute right-0 top-4  mx-5">
         <FiShoppingCart className="text-xl md:text-3xl" />
+        <Link href={"/cart"}></Link>
       </div>
 
 
